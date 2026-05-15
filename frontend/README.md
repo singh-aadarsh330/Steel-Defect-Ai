@@ -1,27 +1,48 @@
-# Frontend: SteelVision Dashboard
+# 🖥️ Frontend: SteelVision SaaS Dashboard
 
-The frontend is a premium, high-performance React dashboard designed for industrial monitoring and defect management.
+A premium, enterprise-grade industrial monitoring interface built with **React 18**. This dashboard provides real-time defect telemetry, batch processing, and global standards compliance monitoring.
 
-## 📁 Files
+## 🎨 Design System
 
-- `src/App.js`: Core logic for batch processing, webcam feed, and history management.
-- `src/index.css`: Zinc/Cobalt design system with glassmorphism.
-- `.env.example`: Environment configuration for the backend URL.
+The UI utilizes a high-contrast **Zinc & Cobalt** theme, following modern "Ultron" design principles:
+- **Glassmorphism**: Translucent panels for a futuristic industrial feel.
+- **Micro-animations**: Lucide icons with CSS transitions for interactive feedback.
+- **Typography**: Optimized with `Inter` for readability and `JetBrains Mono` for telemetry data.
 
-## 🚀 Getting Started
+## 📁 Directory Overview
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start development server:
-   ```bash
-   npm start
-   ```
+| Component | Purpose |
+|---|---|
+| `src/App.js` | Core application logic, state management, and API orchestration. |
+| `src/index.css` | The global design system, CSS variables, and layout utilities. |
+| `public/` | Static assets, icons, and the HTML entry point. |
 
-## ✨ Features
-- **Live Optical Feed**: Real-time webcam analysis.
-- **Batch Processing**: Parallel upload and queuing.
-- **Categorized View**: Automated defect sorting.
-- **PDF Export**: Generate professional inspection reports.
-- **SaaS Layout**: Sidebar navigation and system health indicators.
+## 🚀 Development Setup
+
+### 1. Installation
+```bash
+npm install
+```
+
+### 2. Configuration
+Copy the environment template and set your backend API URL:
+```bash
+cp .env.example .env
+```
+
+### 3. Execution
+```bash
+npm start
+```
+*The dashboard will be available at `http://localhost:3000`.*
+
+## ✨ Advanced Features
+
+- **📦 Parallel Batch Engine**: Drag-and-drop hundreds of images; the engine queues and processes them with real-time progress updates.
+- **📸 Live Optical Feed**: Integrated webcam support for on-the-spot quality inspections on the factory floor.
+- **⚖️ Compliance Guard**: Automated flags for defects that fail **ISO 14488** or **ASTM E155** international standards.
+- **📄 Reporting Engine**: Instant generation of PDF inspection reports and CSV telemetry exports.
+
+---
+> [!NOTE]
+> All analysis data is persisted locally in the browser, allowing for historical review without the need for a centralized database in isolated industrial environments.
