@@ -1,0 +1,94 @@
+# Steel-Defect-Ai: Enterprise Industrial Inspection Hub
+
+[![GitHub License](https://img.shields.io/github/license/user/steel-defect-ai)](https://github.com/user/steel-defect-ai/blob/main/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/user/steel-defect-ai)](https://github.com/user/steel-defect-ai/stargazers)
+[![Python Version](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange.svg)](https://www.tensorflow.org/)
+[![React](https://img.shields.io/badge/React-18.2-blue.svg)](https://reactjs.org/)
+
+## 🏗️ Project Overview
+
+**Steel-Defect-Ai** is a state-of-the-art, professional-grade AI platform designed for automated surface defect detection in steel manufacturing. Using the **EfficientNetV2-S** architecture, it achieves pinpoint accuracy in identifying 6 major industrial defects: Crazing, Inclusion, Patches, Pitted Surface, Rolled-in Scale, and Scratches.
+
+The system features a robust Flask backend and a premium, enterprise-ready React dashboard with real-time analysis, batch processing, and global compliance monitoring (ISO/ASTM).
+
+## ✨ Key Features
+
+- **🚀 State-of-the-Art ML**: EfficientNetV2-S backbone with 99%+ precision potential.
+- **📦 Batch Processing**: Upload and analyze hundreds of samples simultaneously.
+- **🖥️ Enterprise Dashboard**: Premium dark-mode UI with real-time telemetry and history persistence.
+- **🌍 Global Compliance**: Integrated ISO 14488 / ASTM E155 standards for international audits.
+- **📸 Live Optical Feed**: Real-time webcam scanning for on-the-spot inspections.
+- **📊 Advanced Analytics**: Categorized defect distributions and trend reporting.
+- **📄 Exportable Reports**: Generate detailed PDF/CSV inspection summaries.
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React.js, Axios, CSS3 (Glassmorphism), Lucide Icons.
+- **Backend**: Flask, Flask-CORS, TensorFlow (Keras).
+- **ML Engine**: Python 3.11, EfficientNetV2-S, Scikit-learn, OpenCV.
+- **Storage**: Browser LocalStorage for persistence.
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+- Python 3.11+
+- Node.js 18+
+- Git
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/steel-defect-ai.git
+cd steel-defect-ai
+```
+
+### 2. Backend Setup
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env
+python app.py
+```
+
+### 3. Frontend Setup
+```bash
+cd ../frontend
+npm install
+cp .env.example .env
+npm start
+```
+
+## 📁 Project Structure
+
+```text
+├── backend/            # Flask API & Preprocessing logic
+├── frontend/           # React Dashboard (SaaS UI)
+├── model/              # Saved weights (model.h5) and training logs
+├── scripts/            # Training, Prediction, and Dataset utilities
+├── assets/             # Project screenshots and diagrams
+├── dataset/            # NEU-DET training samples (ignored by Git)
+├── uploads/            # Temporary storage for uploaded images
+└── docs/               # Technical documentation
+```
+
+## 🧠 ML Pipeline Explanation
+
+1. **Preprocessing**: Images are resized to 224x224 and scaled via an internal Lambda layer.
+2. **Architecture**: EfficientNetV2-S (ImageNet pretrained) with a custom dual-layer classification head.
+3. **Training**: 3-phase strategy (Feature Extraction → Fine-tuning → Deep Adaptation) with Label Smoothing.
+4. **Inference**: Optimized for low-latency real-time scoring.
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👤 Author
+
+**Your Name**
+- GitHub: [@your-username](https://github.com/your-username)
+- LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)
+
+---
+*For professional inquiries or enterprise licensing, please contact us via the GitHub repository.*

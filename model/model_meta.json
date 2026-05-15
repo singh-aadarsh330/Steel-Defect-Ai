@@ -1,0 +1,12 @@
+{
+  "class_names": [
+    "crazing",
+    "inclusion",
+    "patches",
+    "pitted_surface",
+    "rolled-in_scale",
+    "scratches"
+  ],
+  "accuracy": 0.9666666388511658,
+  "trained_at": "2026-05-15T01:00:47.966271"
+}
