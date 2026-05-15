@@ -1,7 +1,7 @@
 # Steel-Defect-Ai: Enterprise Industrial Inspection Hub
 
-[![GitHub License](https://img.shields.io/github/license/user/steel-defect-ai)](https://github.com/user/steel-defect-ai/blob/main/LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/user/steel-defect-ai)](https://github.com/user/steel-defect-ai/stargazers)
+[![GitHub License](https://img.shields.io/github/license/singh-aadarsh330/Steel-Defect-Ai)](https://github.com/singh-aadarsh330/Steel-Defect-Ai/blob/main/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/singh-aadarsh330/Steel-Defect-Ai)](https://github.com/singh-aadarsh330/Steel-Defect-Ai/stargazers)
 [![Python Version](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange.svg)](https://www.tensorflow.org/)
 [![React](https://img.shields.io/badge/React-18.2-blue.svg)](https://reactjs.org/)
@@ -38,7 +38,7 @@ The system features a robust Flask backend and a premium, enterprise-ready React
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/steel-defect-ai.git
+git clone https://github.com/singh-aadarsh330/steel-defect-ai.git
 cd steel-defect-ai
 ```
 
@@ -86,9 +86,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)
+**Aadarsh Singh**
+- GitHub: [@singh-aadarsh330](https://github.com/singh-aadarsh330)
+- LinkedIn: [Aadarsh Singh](https://www.linkedin.com/in/aadarsh-singh-kiit)
 
 ---
 *For professional inquiries or enterprise licensing, please contact us via the GitHub repository.*
