@@ -6,6 +6,8 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange.svg)](https://www.tensorflow.org/)
 [![React](https://img.shields.io/badge/React-18.2-blue.svg)](https://reactjs.org/)
 
+![Steel-Defect-Ai Dashboard](assets/dashboard_preview.png)
+
 ## 🏗️ Project Overview
 
 **Steel-Defect-Ai** is a state-of-the-art, professional-grade AI platform designed for automated surface defect detection in steel manufacturing. Using the **EfficientNetV2-S** architecture, it achieves pinpoint accuracy in identifying 6 major industrial defects: Crazing, Inclusion, Patches, Pitted Surface, Rolled-in Scale, and Scratches.
