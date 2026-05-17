@@ -16,7 +16,7 @@ The system features a robust Flask backend and a premium, enterprise-ready React
 
 ## âœ¨ Key Features
 
-- **ðŸš€ State-of-the-Art ML**: EfficientNetV2-S backbone with 99%+ precision potential.
+- **ðŸš€ State-of-the-Art ML**: EfficientNetV2-S backbone with 91% validated accuracy (F1-score across 6 classes).
 - **ðŸ“¦ Batch Processing**: Upload and analyze hundreds of samples simultaneously.
 - **ðŸ–¥ï¸ Enterprise Dashboard**: Premium dark-mode UI with real-time telemetry and history persistence.
 - **ðŸŒ Global Compliance**: Integrated ISO 14488 / ASTM E155 standards for international audits.
@@ -115,3 +115,4 @@ Download the model weights directly from Hugging Face:
 ![Confusion Matrix](assets/confusion_matrix.png)
 
 > ⚠️ **Prototype Notice:** This is a demonstration prototype. Browser LocalStorage is used for session persistence. A production deployment would use a proper database (PostgreSQL/MongoDB) and cloud storage.
+
