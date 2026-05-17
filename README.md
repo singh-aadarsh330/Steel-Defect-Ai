@@ -1,61 +1,92 @@
-Steel-Defect-Ai: Enterprise Industrial Inspection Hub
-Show Image
-Show Image
-Show Image
-Show Image
-Show Image
-Project Overview
-Steel-Defect-Ai is a professional-grade AI platform for automated surface defect detection in steel manufacturing. Using EfficientNetV2-S, it identifies 6 major industrial defects: Crazing, Inclusion, Patches, Pitted Surface, Rolled-in Scale, and Scratches.
-Key Features
+# Steel-Defect-Ai: Enterprise Industrial Inspection Hub
 
-State-of-the-Art ML: EfficientNetV2-S backbone with 91% validated accuracy (F1-score across 6 classes).
-Batch Processing: Upload and analyze hundreds of samples simultaneously.
-Enterprise Dashboard: Premium dark-mode UI with real-time telemetry and history persistence.
-Global Compliance: Integrated ISO 14488 / ASTM E155 standards for international audits.
-Live Optical Feed: Real-time webcam scanning for on-the-spot inspections.
-Advanced Analytics: Categorized defect distributions and trend reporting.
-Exportable Reports: Generate detailed PDF/CSV inspection summaries.
+![GitHub License](https://img.shields.io/github/license/singh-aadarsh330/Steel-Defect-Ai)
+![Python Version](https://img.shields.io/badge/python-3.11-blue.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange.svg)
+![React](https://img.shields.io/badge/React-18.2-blue.svg)
 
-Model Performance (v2 - Fine-tuned)
-ClassPrecisionRecallF1-ScoreCrazing1.000.680.81Inclusion0.871.000.93Patches0.831.000.91Pitted Surface0.980.830.90Rolled-in Scale0.880.980.93Scratches0.970.970.97Overall Accuracy0.91
-Show Image
-Pre-trained Model
-Download model weights from Hugging Face: singhaadarsh330/steel-defect-ai
+![Steel-Defect-Ai Dashboard](assets/dashboard_preview.png)
 
-model.h5 - Original model
-model_improved.keras - Fine-tuned model (91% accuracy)
+## Project Overview
 
-Tech Stack
+**Steel-Defect-Ai** is a professional-grade AI platform for automated surface defect detection in steel manufacturing. Using **EfficientNetV2-S**, it identifies 6 major industrial defects: Crazing, Inclusion, Patches, Pitted Surface, Rolled-in Scale, and Scratches.
 
-Frontend: React.js, Axios, CSS3 (Glassmorphism), Lucide Icons
-Backend: Flask, Flask-CORS, TensorFlow (Keras)
-ML Engine: Python 3.11, EfficientNetV2-S, Scikit-learn, OpenCV
-Storage: Browser LocalStorage for persistence
+## Key Features
 
+- **State-of-the-Art ML**: EfficientNetV2-S backbone with 91% validated accuracy (F1-score across 6 classes).
+- **Batch Processing**: Upload and analyze hundreds of samples simultaneously.
+- **Enterprise Dashboard**: Premium dark-mode UI with real-time telemetry and history persistence.
+- **Global Compliance**: Integrated ISO 14488 / ASTM E155 standards for international audits.
+- **Live Optical Feed**: Real-time webcam scanning for on-the-spot inspections.
+- **Advanced Analytics**: Categorized defect distributions and trend reporting.
+- **Exportable Reports**: Generate detailed PDF/CSV inspection summaries.
 
-Prototype Notice: This is a demonstration prototype. Browser LocalStorage is used for session persistence. A production deployment would use a proper database (PostgreSQL/MongoDB) and cloud storage.
+## Model Performance (v2 - Fine-tuned)
 
-Installation & Setup
-Prerequisites
+| Class           | Precision | Recall | F1-Score |
+|-----------------|-----------|--------|----------|
+| Crazing         | 1.00      | 0.68   | 0.81     |
+| Inclusion       | 0.87      | 1.00   | 0.93     |
+| Patches         | 0.83      | 1.00   | 0.91     |
+| Pitted Surface  | 0.98      | 0.83   | 0.90     |
+| Rolled-in Scale | 0.88      | 0.98   | 0.93     |
+| Scratches       | 0.97      | 0.97   | 0.97     |
+| **Overall**     |           |        | **0.91** |
 
-Python 3.11+
-Node.js 18+
-Git
+![Confusion Matrix](assets/confusion_matrix.png)
 
-1. Clone the Repository
+## Pre-trained Model
+
+Download model weights from Hugging Face: [singhaadarsh330/steel-defect-ai](https://huggingface.co/singhaadarsh330/steel-defect-ai)
+
+- `model.h5` - Original model
+- `model_improved.keras` - Fine-tuned model (91% accuracy)
+
+## Tech Stack
+
+- **Frontend**: React.js, Axios, CSS3 (Glassmorphism), Lucide Icons
+- **Backend**: Flask, Flask-CORS, TensorFlow (Keras)
+- **ML Engine**: Python 3.11, EfficientNetV2-S, Scikit-learn, OpenCV
+- **Storage**: Browser LocalStorage for persistence
+
+> **Prototype Notice:** This is a demonstration prototype. Browser LocalStorage is used for session persistence. A production deployment would use a proper database (PostgreSQL/MongoDB) and cloud storage.
+
+## Installation & Setup
+
+### Prerequisites
+
+- Python 3.11+
+- Node.js 18+
+- Git
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/singh-aadarsh330/Steel-Defect-Ai.git
 cd Steel-Defect-Ai
-2. Backend Setup
+```
+
+### 2. Backend Setup
+
+```bash
 cd backend
 python -m venv venv
-source venv/bin/activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python app.py
-3. Frontend Setup
+```
+
+### 3. Frontend Setup
+
+```bash
 cd ../frontend
 npm install
 npm start
-Project Structure
+```
+
+## Project Structure
+
+```
 ├── backend/         # Flask API & preprocessing logic
 ├── frontend/        # React dashboard
 ├── model/           # Model info and training logs
@@ -63,17 +94,22 @@ Project Structure
 ├── tests/           # API unit tests
 ├── assets/          # Screenshots and diagrams
 └── dataset/         # NEU-DET training samples (ignored by Git)
-ML Pipeline
+```
 
-Preprocessing: Images resized to 224x224 via internal Lambda layer.
-Architecture: EfficientNetV2-S (ImageNet pretrained) with custom classification head.
-Training: 3-phase strategy (Feature Extraction → Fine-tuning → Deep Adaptation) with class weighting and label smoothing.
-Inference: Optimized for low-latency real-time scoring.
+## ML Pipeline
 
-License
-MIT License - see the LICENSE file for details.
-Author
-Aadarsh Singh
+1. **Preprocessing**: Images resized to 224x224 via internal Lambda layer.
+2. **Architecture**: EfficientNetV2-S (ImageNet pretrained) with custom classification head.
+3. **Training**: 3-phase strategy (Feature Extraction → Fine-tuning → Deep Adaptation) with class weighting and label smoothing.
+4. **Inference**: Optimized for low-latency real-time scoring.
 
-GitHub: @singh-aadarsh330
-LinkedIn: Aadarsh Singh
+## License
+
+MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+**Aadarsh Singh**
+
+- GitHub: [@singh-aadarsh330](https://github.com/singh-aadarsh330)
+- LinkedIn: [Aadarsh Singh](https://www.linkedin.com/in/aadarsh-singh-kiit)
