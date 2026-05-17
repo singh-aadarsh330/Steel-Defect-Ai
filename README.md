@@ -113,3 +113,5 @@ Download the model weights directly from Hugging Face:
 | **Overall Accuracy** | | | **0.91** |
 
 ![Confusion Matrix](assets/confusion_matrix.png)
+
+> ⚠️ **Prototype Notice:** This is a demonstration prototype. Browser LocalStorage is used for session persistence. A production deployment would use a proper database (PostgreSQL/MongoDB) and cloud storage.
