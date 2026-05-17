@@ -99,3 +99,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Download the model weights directly from Hugging Face:
 👉 [singhaadarsh330/steel-defect-ai](https://huggingface.co/singhaadarsh330/steel-defect-ai)
 
+
+## 📊 Model Performance (v2 - Fine-tuned)
+
+| Class | Precision | Recall | F1-Score |
+|-------|-----------|--------|----------|
+| Crazing | 1.00 | 0.68 | 0.81 |
+| Inclusion | 0.87 | 1.00 | 0.93 |
+| Patches | 0.83 | 1.00 | 0.91 |
+| Pitted Surface | 0.98 | 0.83 | 0.90 |
+| Rolled-in Scale | 0.88 | 0.98 | 0.93 |
+| Scratches | 0.97 | 0.97 | 0.97 |
+| **Overall Accuracy** | | | **0.91** |
+
+![Confusion Matrix](assets/confusion_matrix.png)
