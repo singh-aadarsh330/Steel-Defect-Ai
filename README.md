@@ -1,4 +1,4 @@
-# Steel-Defect-Ai: Enterprise Industrial Inspection Hub
+﻿# Steel-Defect-Ai: Enterprise Industrial Inspection Hub
 
 [![GitHub License](https://img.shields.io/github/license/singh-aadarsh330/Steel-Defect-Ai)](https://github.com/singh-aadarsh330/Steel-Defect-Ai/blob/main/LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/singh-aadarsh330/Steel-Defect-Ai)](https://github.com/singh-aadarsh330/Steel-Defect-Ai/stargazers)
@@ -8,30 +8,30 @@
 
 ![Steel-Defect-Ai Dashboard](assets/dashboard_preview.png)
 
-## 🏗️ Project Overview
+## ðŸ—ï¸ Project Overview
 
 **Steel-Defect-Ai** is a state-of-the-art, professional-grade AI platform designed for automated surface defect detection in steel manufacturing. Using the **EfficientNetV2-S** architecture, it achieves pinpoint accuracy in identifying 6 major industrial defects: Crazing, Inclusion, Patches, Pitted Surface, Rolled-in Scale, and Scratches.
 
 The system features a robust Flask backend and a premium, enterprise-ready React dashboard with real-time analysis, batch processing, and global compliance monitoring (ISO/ASTM).
 
-## ✨ Key Features
+## âœ¨ Key Features
 
-- **🚀 State-of-the-Art ML**: EfficientNetV2-S backbone with 99%+ precision potential.
-- **📦 Batch Processing**: Upload and analyze hundreds of samples simultaneously.
-- **🖥️ Enterprise Dashboard**: Premium dark-mode UI with real-time telemetry and history persistence.
-- **🌍 Global Compliance**: Integrated ISO 14488 / ASTM E155 standards for international audits.
-- **📸 Live Optical Feed**: Real-time webcam scanning for on-the-spot inspections.
-- **📊 Advanced Analytics**: Categorized defect distributions and trend reporting.
-- **📄 Exportable Reports**: Generate detailed PDF/CSV inspection summaries.
+- **ðŸš€ State-of-the-Art ML**: EfficientNetV2-S backbone with 99%+ precision potential.
+- **ðŸ“¦ Batch Processing**: Upload and analyze hundreds of samples simultaneously.
+- **ðŸ–¥ï¸ Enterprise Dashboard**: Premium dark-mode UI with real-time telemetry and history persistence.
+- **ðŸŒ Global Compliance**: Integrated ISO 14488 / ASTM E155 standards for international audits.
+- **ðŸ“¸ Live Optical Feed**: Real-time webcam scanning for on-the-spot inspections.
+- **ðŸ“Š Advanced Analytics**: Categorized defect distributions and trend reporting.
+- **ðŸ“„ Exportable Reports**: Generate detailed PDF/CSV inspection summaries.
 
-## 🛠️ Tech Stack
+## ðŸ› ï¸ Tech Stack
 
 - **Frontend**: React.js, Axios, CSS3 (Glassmorphism), Lucide Icons.
 - **Backend**: Flask, Flask-CORS, TensorFlow (Keras).
 - **ML Engine**: Python 3.11, EfficientNetV2-S, Scikit-learn, OpenCV.
 - **Storage**: Browser LocalStorage for persistence.
 
-## 🚀 Installation & Setup
+## ðŸš€ Installation & Setup
 
 ### Prerequisites
 - Python 3.11+
@@ -62,31 +62,31 @@ cp .env.example .env
 npm start
 ```
 
-## 📁 Project Structure
+## ðŸ“ Project Structure
 
 ```text
-├── backend/            # Flask API & Preprocessing logic
-├── frontend/           # React Dashboard (SaaS UI)
-├── model/              # Saved weights (model.h5) and training logs
-├── scripts/            # Training, Prediction, and Dataset utilities
-├── assets/             # Project screenshots and diagrams
-├── dataset/            # NEU-DET training samples (ignored by Git)
-├── uploads/            # Temporary storage for uploaded images
-└── docs/               # Technical documentation
+â”œâ”€â”€ backend/            # Flask API & Preprocessing logic
+â”œâ”€â”€ frontend/           # React Dashboard (SaaS UI)
+â”œâ”€â”€ model/              # Saved weights (model.h5) and training logs
+â”œâ”€â”€ scripts/            # Training, Prediction, and Dataset utilities
+â”œâ”€â”€ assets/             # Project screenshots and diagrams
+â”œâ”€â”€ dataset/            # NEU-DET training samples (ignored by Git)
+â”œâ”€â”€ uploads/            # Temporary storage for uploaded images
+â””â”€â”€ docs/               # Technical documentation
 ```
 
-## 🧠 ML Pipeline Explanation
+## ðŸ§  ML Pipeline Explanation
 
 1. **Preprocessing**: Images are resized to 224x224 and scaled via an internal Lambda layer.
 2. **Architecture**: EfficientNetV2-S (ImageNet pretrained) with a custom dual-layer classification head.
-3. **Training**: 3-phase strategy (Feature Extraction → Fine-tuning → Deep Adaptation) with Label Smoothing.
+3. **Training**: 3-phase strategy (Feature Extraction â†’ Fine-tuning â†’ Deep Adaptation) with Label Smoothing.
 4. **Inference**: Optimized for low-latency real-time scoring.
 
-## 📜 License
+## ðŸ“œ License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👤 Author
+## ðŸ‘¤ Author
 
 **Aadarsh Singh**
 - GitHub: [@singh-aadarsh330](https://github.com/singh-aadarsh330)
@@ -94,3 +94,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 *For professional inquiries or enterprise licensing, please contact us via the GitHub repository.*
+
+## 🤗 Pre-trained Model
+Download the model weights directly from Hugging Face:
+👉 [singhaadarsh330/steel-defect-ai](https://huggingface.co/singhaadarsh330/steel-defect-ai)
+
