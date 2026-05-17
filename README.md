@@ -1,4 +1,4 @@
-﻿# Steel-Defect-Ai: Enterprise Industrial Inspection Hub
+# Steel-Defect-Ai: Enterprise Industrial Inspection Hub
 
 [![GitHub License](https://img.shields.io/github/license/singh-aadarsh330/Steel-Defect-Ai)](https://github.com/singh-aadarsh330/Steel-Defect-Ai/blob/main/LICENSE)
 [![GitHub Stars](https://img.shields.io/github/stars/singh-aadarsh330/Steel-Defect-Ai)](https://github.com/singh-aadarsh330/Steel-Defect-Ai/stargazers)
